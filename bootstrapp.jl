@@ -30,4 +30,4 @@ function convergence_plot(stats)
 	iters = collect(1:1000)
 	plot(stats, iters, color="red", linewidth="-")
 	title("convergence of stats vs iters")
-	
+end
