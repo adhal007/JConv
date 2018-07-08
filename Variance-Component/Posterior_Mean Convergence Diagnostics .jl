@@ -75,7 +75,7 @@ function plot_MCMC_sample(mtx, title="", wcm_each=24, hcm_each=8)
     #Plot histogram of counts for each y
     
     m = plot(collect(1:n), y_2, legend = false)
-    r = plot!(m, collect(1:n), y_1, legend = false)  
+    r = plot!(m, collect(1:n), y_1, legend = false, xlabel = "Iterations", ylabel="Variance")  
     display(r)
     #Merge column value and column moving vector
     
